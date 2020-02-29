@@ -1,0 +1,18 @@
+Bajenaru Catalin
+Grupa 311CB
+
+Pentru variabile este construit un arbore AVL(echilibrat) cu ajutorul functiilor: inserAVL, rotst, rotdr, maxh. Atunci cand se
+doreste
+sa se afle valoarea unei variabile este cautata in arbore apeland functia findinAVL, returnandu-se INF daca nu este gasita. 
+(Existau si alte metode mai simplu de implementat pentru a cauta un string si a-i gasi valoarea asociata intr-o structura de
+date, dar daca tot e vorba despre arbori...)
+Functia makenumer primeste un sir de caractere care reprezinta un nr si intoarce numarul respectiv.
+Functia buildarb primeste ca parametru un strig ce semnifica o linie de operatori si operanzi, parcurge sirul de caractere
+folosind functia strtok, iar in mod iterativ(cu o stiva) este realizat arborele de operatori si operanzi.
+Functia calcarb calculeaza in mod recursiv valoarea arborelui de expresie dat. Daca apar variabile care nu au fost declarate
+anterior se afiseaza mesajul corespunzator si este oprita recursivitatea. Daca este facuta o impartire la 0 sau sqrt din nr
+negativ atunci se opreste recursivitatea iar o variabila numita ok isi schimba valoarea astfel incat in main sa se afiseze
+mesajul aferent.
+Dupa ce este construit arborele si este afisata valoarea expresiei sale este chemata functia eliberab care dealoca memoria,
+iar in mod asemanator la finalul programului este apelata functia eliberavl care are rolul de a elibera memoria folosita in
+scopul crearii arborelui echilibrat in care erau retinute numele variabilelor si valorile asociate lor.
